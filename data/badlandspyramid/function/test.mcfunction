@@ -1,0 +1,1 @@
+tellraw @s {"text": "Test function for the Badlands Pyramid datapack.", "color": "gold"}

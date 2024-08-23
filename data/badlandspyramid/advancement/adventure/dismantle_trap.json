@@ -1,0 +1,48 @@
+{
+  "parent": "badlandspyramid:adventure/tomb_raider",
+  "criteria": {
+    "enter_badlands_pyramid": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "badlandspyramid:badlands_pyramid"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tick"
+    },
+    "dismantle_trap": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:string", "minecraft:tnt", "minecraft:tripwire_hook", "minecraft:oak_pressure_plate"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Carefully dismantle a trap in the Badlands Pyramid"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:tripwire_hook"
+    },
+    "title": {
+      "text": "Safety First"
+    },
+    "frame": "task"
+  },
+  "requirements": [
+      ["enter_badlands_pyramid"], ["dismantle_trap"]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 20073331,
+    "separation": 20,
+    "spacing": 30
+  },
+  "structures": [
+    {
+      "structure": "badlandspyramid:badlands_pyramid",
+      "weight": 1
+    }
+  ]
+}
